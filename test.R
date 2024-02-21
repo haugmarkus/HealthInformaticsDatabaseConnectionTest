@@ -1,3 +1,6 @@
+# Set CRAN mirror
+options(repos = c(CRAN = "https://cloud.r-project.org/"))
+
 # Install required packages
 if (!requireNamespace("DBI", quietly = TRUE)) install.packages("DBI")
 if (!requireNamespace("DatabaseConnector", quietly = TRUE)) install.packages("DatabaseConnector")
