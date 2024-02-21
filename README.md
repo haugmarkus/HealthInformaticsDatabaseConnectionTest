@@ -6,18 +6,28 @@
   git clone https://github.com/haugmarkus/HealthInformaticsDatabaseConnectionTest.git
   ```
 
-  2. Initiate ssh connection
+  2. Populate .env file with your credentials
+  ```
+  DB_USERNAME=username
+  DB_PASSWORD=pw
+  DB_PORT=65432
+  DB_SERVER=localhost
+  DB_NAME=maitt
+  ```
+
+  3. Initiate ssh connection
 
   ```
   ssh -L 65432:localhost:5432 username@server_name
   ```
 
-  3. Run the code in test.R
+  4. Run the code in test.R
 
   ```
   Rscript test.R
   ```
-  If succesful you should see:
+
+  5. If succesful you should see:
 
   ```
   > test_dbi_connection()
